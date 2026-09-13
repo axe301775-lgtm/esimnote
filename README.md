@@ -28,5 +28,6 @@ node server.cjs
 ## 数据说明
 
 资料为运营商官网的人工整理快照，价格保留原始币种。月费、年付、充值余额和休眠保号分别标注；购买前请再次核对对应官网。验证码能否送达还取决于发送平台和漫游网络。
+
 本项目仅为演示Demo，代码由AI生成，仅作为个人兴趣学习使用。
 This is a demo prototype. Source code generated with AI, for hobby and learning purpose only.
