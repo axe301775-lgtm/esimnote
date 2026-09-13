@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#087f63">
+  <meta name="description" content="多国长期保号 eSIM 对比：覆盖美国、英国、中国香港、法国、德国、西班牙、日本、新加坡、澳大利亚和加拿大，搜索费用、实名与开通条件，并查看官方 FAQ。">
+  <title>SIMNOTE · eSIM 保号指南</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="data-more.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳至主要内容</a>
+  <aside class="sidebar">
+    <a href="#plans" class="brand" aria-label="SIMNOTE 首页"><span class="brand-symbol" data-icon="sim"></span><span>simnote<span class="brand-dot">.</span></span></a>
+    <div class="edition">你的 eSIM 保号参考册</div>
+    <div class="nav-label">探索</div>
+    <nav aria-label="主导航">
+      <a class="nav-item active" href="#plans" data-view="plans"><span data-icon="layers"></span>方案对比<span class="nav-count" id="plan-nav-count">11</span></a>
+      <a class="nav-item" href="#requirements" data-view="requirements"><span data-icon="id"></span>注册条件</a>
+      <a class="nav-item" href="#faq" data-view="faq"><span data-icon="help"></span>FAQ 资料库<span class="nav-count" id="faq-nav-count"></span></a>
+    </nav>
+    <div class="nav-label region-label">号码归属地</div>
+    <nav class="region-nav" id="country-nav" aria-label="按号码归属地筛选">
+      <button data-region="US"><span class="country-mini">US</span>美国<span>+1</span></button>
+      <button data-region="UK"><span class="country-mini">UK</span>英国<span>+44</span></button>
+      <button data-region="HK"><span class="country-mini">HK</span>中国香港<span>+852</span></button>
+    </nav>
+    <div class="sidebar-note"><span data-icon="book"></span><strong>每条信息，都有出处。</strong><p>费用与条件来自运营商官网。点击小图标，展开查看细节。</p><a href="#sources">查看资料来源 <span data-icon="arrow"></span></a></div>
+    <div class="sidebar-bottom"><span data-icon="globe"></span>简体中文<span>2026 版</span></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div class="breadcrumb">eSIM 参考册 <span>/</span> <strong id="breadcrumb-current">方案对比</strong></div><a href="#sources" class="source-top"><span data-icon="shield"></span>官网资料整理</a></header>
+    <main id="main">
+      <section class="page-heading"><div><div class="eyebrow">A NUMBER WORTH KEEPING</div><h1 id="page-title">选一个，长期在线的号码<span>。</span></h1><p id="page-description">从费用到开通门槛，找到适合你的长期保号 eSIM。</p></div><div class="update-stamp"><span data-icon="refresh"></span><div>资料核对日期<strong>2026.09.13</strong></div></div></section>
+      <div class="overview"><span><strong id="plan-total">11</strong>运营商</span><span><strong id="country-total">10</strong>国家 / 地区</span><span><strong id="faq-total">43</strong>官方 FAQ</span><div><span data-icon="sim"></span>均含手机号 · 开户资格单独标注</div></div>
+      <section class="search-area" aria-label="搜索和筛选"><div class="search-box"><span data-icon="search"></span><label for="search" class="sr-only">搜索运营商、条件或 FAQ</label><input type="search" id="search" placeholder="搜索国家、运营商、实名条件、短信、FAQ…" autocomplete="off"><kbd>/</kbd></div><div class="filter-row"><div class="region-filters" role="group" aria-label="号码地区"><button class="chip active" data-filter="all">全部地区</button><label class="country-select"><span data-icon="globe"></span><select id="country-select" aria-label="选择号码所属国家或地区"></select></label></div><label class="condition-filter"><span data-icon="sliders"></span><select id="condition" aria-label="实名条件"><option value="all">全部实名条件</option><option value="required">须证件实名</option><option value="unspecified">证件要求未明确</option></select></label></div></section>
+      <section id="results-section" aria-labelledby="results-heading"><div class="section-heading"><h2 id="results-heading">长期保号方案 <span id="result-count">4</span></h2><span class="section-hint" id="result-hint">选择 2–3 个方案，展开并排对比</span></div><div id="results" aria-live="polite"></div></section>
+      <section class="quick-faq" id="quick-faq"><div class="section-heading"><h2>开通之前，先弄清楚</h2><a href="#faq">全部 FAQ <span data-icon="arrow"></span></a></div><div class="quick-faq-grid"><button data-quick="tello-activate"><span class="quick-icon" data-icon="globe"></span><strong>不在美国，能开通 Tello 吗？</strong><span>查看当前激活限制 <i data-icon="arrow"></i></span></button><button data-quick="giffgaff-keep"><span class="quick-icon" data-icon="clock"></span><strong>只收短信，算有效保号吗？</strong><span>了解 giffgaff 的活跃要求 <i data-icon="arrow"></i></span></button><button data-quick="sosim-cost"><span class="quick-icon" data-icon="wallet"></span><strong>充值金额，就是保号费用吗？</strong><span>分清余额与有效期 <i data-icon="arrow"></i></span></button></div></section>
+      <div class="data-note"><span data-icon="info"></span><p>价格保留原币种；月费、年付与充值余额不能直接等同。资料为 <strong>2026 年 9 月 13 日</strong> 的官网快照，非实时报价；购买前请复核官网。验证码能否送达还取决于发送平台与漫游网络。</p></div>
+      <footer><span>simnote. <span class="footer-divider">/</span> 把复杂的条件，看清楚。</span><a href="#sources">资料来源与比较口径 <span data-icon="arrow-up"></span></a></footer>
+    </main>
+  </div>
+  <div class="compare-bar" id="compare-bar" hidden><div><span data-icon="layers"></span><strong>已选 <span id="selected-count">0</span> 个方案</strong><div id="selected-brands"></div></div><div><button class="text-button" id="clear-compare">清空</button><button class="primary-button" id="open-compare">开始对比 <span data-icon="arrow"></span></button></div></div>
+  <dialog id="detail-dialog" class="detail-dialog" aria-labelledby="detail-title"><button class="close-button" data-close="detail-dialog" aria-label="关闭详情"><span data-icon="close"></span></button><div id="detail-content"></div></dialog>
+  <dialog id="compare-dialog" class="compare-dialog" aria-labelledby="compare-title"><button class="close-button" data-close="compare-dialog" aria-label="关闭对比"><span data-icon="close"></span></button><div id="compare-content"></div></dialog>
+  <div class="toast" id="toast" role="status" hidden></div>
+</body>
+</html>
